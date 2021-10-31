@@ -2,7 +2,7 @@ const API_URL = 'https://pokeapi.co/api/v2/pokemon/';
 const sendnum = document.getElementById('button');
 const num = document.getElementById('num');
 const app = document.getElementById('app');
-num.value = 25;
+num.value = 6;
 const getPokemon = () => {
     const pokemonId = num.value;
     fetch(`${API_URL}${pokemonId}`)
