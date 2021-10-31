@@ -25,9 +25,9 @@ const getPokemon = () => {
 			</thead>
 			<tbody>
 					<tr>
-					<td>${data.base_experience}</td>
-					<td>${data.height}</td>
-					<td>${data.weight}</td>
+					<td>${data.base_experience}🐱‍👤</td>
+					<td>${data.height}dm</td>
+					<td>${data.weight}hg</td>
 					</tr>
 				</tbody>
 					`;
