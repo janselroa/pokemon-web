@@ -14,24 +14,15 @@ const getPokemon = () => {
 		<div><img src="${data.sprites.front_default}" height="100"></div>
 		</div>
 		`;
-            const table = document.createElement("table");
-            table.innerHTML = `
-			<thead>
-			<tr>	
-					<td>Experiencia</td>
-					<td>Altura</td>
-					<td>Peso</td>
-					</tr>
-			</thead>
-			<tbody>
-					<tr>
-					<td>${data.base_experience}🐱‍👤</td>
-					<td>${data.height}dm</td>
-					<td>${data.weight}hg</td>
-					</tr>
-				</tbody>
+            const container = document.createElement("div");
+            container.classList.add("caracteristicas")
+            container.innerHTML = `
+			<h3 class="title">Caracteristicas</h3>
+					<p>Nivel de Experiencia: ${data.base_experience}</p>
+					<p>Altura: ${data.height}dm</p>
+					<p>Peso: ${data.weight}hg</p>
 					`;
-            app.appendChild(table)
+            app.appendChild(container)
         })
 }
 getPokemon()

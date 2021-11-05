@@ -1,7 +1,13 @@
 body {
-    background: #222;
-    font-family: arial, sans-serif;
+    background: no-repeat url("./img/background.jpg");
+    background-size: cover;
+    --background: #000a;
+    font-family: Arial, Helvetica, sans-serif;
     color: #fff;
+}
+
+*::selection {
+    background: hsl(120, 100%, 30%);
 }
 
 .title {
@@ -18,7 +24,7 @@ body {
 
 input,
 button {
-    background-color: #111;
+    background-color: var(--background);
     border: none;
     padding: 12px;
     border-radius: 10px;
@@ -30,7 +36,7 @@ button {
 }
 
 button:hover {
-    background-color: #333;
+    background-color: #222d;
 }
 
 #input {
@@ -39,10 +45,10 @@ button:hover {
 }
 
 #app {
-    width: 400px;
+    width: 450px;
     display: flex;
     margin: 60px auto;
-    background-color: #111;
+    background-color: var(--background);
     padding: 20px;
     border-radius: 10px;
     justify-content: space-around;
@@ -54,6 +60,12 @@ button:hover {
     object-fit: cover;
 }
 
-tbody {
-    border: 1px solid #fff;
+.copyright {
+    text-align: center;
+    text-decoration: underline;
+    font-size: 1.2rem;
+}
+
+.caracteristicas {
+    margin-top: 30px;
 }
