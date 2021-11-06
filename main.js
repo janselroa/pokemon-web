@@ -1,5 +1,4 @@
 const API_URL = 'https://pokeapi.co/api/v2/pokemon/';
-const sendnum = document.getElementById('button');
 const num = document.getElementById('num');
 const app = document.getElementById('app');
 num.value = 6;
@@ -29,4 +28,9 @@ getPokemon()
 button.addEventListener('click', () => {
     getPokemon()
     num.value = "";
+})
+input.addEventListener('keyup', (e) => {
+    if (e.key == "Enter") {
+        getPokemon()
+    }
 })
